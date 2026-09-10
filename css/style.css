@@ -1,0 +1,193 @@
+:root{
+    --verde-friendball: #34A851;
+    --verde-hover: #28803e;
+}
+
+body{
+    margin: 0px;
+}
+
+#cabeca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    background-color: var(--verde-friendball);
+    padding: 10px 0 10px 0;
+}
+
+#linha{
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bola{
+    position: relative;
+    width: 75px;
+}
+
+@font-face {
+  font-family: 'Pokémon Hollow';
+  src: url(../fonts/Pokemon\ Hollow.ttf);
+}
+
+
+@font-face {
+  font-family: 'Pokémon Solid';
+  src: url(../fonts/Pokemon\ Solid.ttf);
+}
+
+h1{
+    color: white;
+    font-family: 'Pokémon Hollow';
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 0 20px 0;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav > a{
+    min-width: 70px;
+    min-height: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 8px;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+nav > a:hover{
+    background-color: var(--verde-hover);
+    transform: translateY(-2px);
+}
+
+#contato{
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.25s ease;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#zap{
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.25s ease;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#insta{
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: all 0.25s ease;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#zap > p{
+  margin: 5px;
+}
+
+#insta > p{
+  margin: 5px;
+}
+
+#whatsapp{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+#instagram{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#fotoBulba {
+  max-width: 100%;
+  min-height: 577px;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  
+  background-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.95) 0%,       
+      rgba(0, 0, 0, 0.85) 35%,
+      rgba(0, 0, 0, 0.3) 55%,
+      rgba(0, 0, 0, 0) 100%        
+    ),
+    url(../img/fotobulba.jpg);
+  
+  background-size: cover;
+  background-position: center;
+}
+
+#textoBulba {
+  max-width: 500px;
+  color: var(--texto-branco);
+}
+
+#textoBulba > h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: white;
+}
+
+#textoBulba > p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
