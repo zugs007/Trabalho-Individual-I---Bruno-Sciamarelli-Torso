@@ -17,6 +17,10 @@
     --transicao: all 0.3s ease;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -211,29 +215,28 @@ h1 {
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    border: 4px solid #1E293B;
-    background: linear-gradient(180deg, var(--verde-friendball) 47%, #1E293B 47%, #1E293B 53%, #FFFFFF 53%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.4s ease;
-    cursor: pointer;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
+    /* REMOVE A BORDA E O FUNDO PADRÃO DO BOTÃO */
+    border: none;
+    background: transparent;
+    padding: 0;
 }
 
-#bola::before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    background-color: #FFCB05;
-    border: 3px solid #1E293B;
-    border-radius: 50%;
-    box-shadow: 0 0 0 2px #E53E3E;
+/* Garante que a imagem ocupe o botão perfeitamente */
+#bola img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
 }
 
-#bola:hover {
-    transform: translateX(-50%) rotate(360deg) scale(1.1);
+#bola:hover img {
+    transform: rotate(360deg) scale(1.1);
 }
 
 /* ==========================================================================
