@@ -1,68 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  
-    <head>
+<head>
+    <title>PokéLar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body>
 
-        <!-- 
-        
-        Inspirações:
-        https://resgatos.com.br/
-        https://institutoamparanimal.org.br/
+    <header id="cabeca">
+    <div id="cabeca-container">
+        <!-- Logo com Ícone para dar contexto -->
+        <h1>PokéLar</h1>
 
-        -->
+        <!-- Navegação Principal -->
+        <nav id="nav" aria-label="Navegação Principal">
+            <a href="#" class="nav-link ativo">Início</a>
+            <a href="#" class="nav-link">Pokémon Disponíveis</a>
+            <a href="#" class="nav-link">Como Adotar</a>
+            <a href="#" class="nav-link">Sobre Nós</a>
+            <a href="#" class="nav-link nav-destaque">Login</a>
+        </nav>
 
-        <title>PokéLar</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <meta name="viewport" content="width=device-width">
-        <meta charset="UTF-8">
-
-    </head>
-
-    <body>
-
-        <header id="cabeca">
-        
-            <h1>PokéLar</h1>
-
-            <nav id="nav">
-                
-                <a href="#" class="botao">Início</a>
-                <a href="#" class="botao">Pokémon Disponíveis</a>
-                <a href="#" class="botao">Como Adotar</a>
-                <a href="#" class="botao">Sobre Nós</a>
-                <a href="#" class="botao">Login</a>
-            </nav>
-
-            <div id="contato">
-                <div id="zap">
-                    <img src="img/whatsapp.png" alt="" id="whatsapp">
-                    <p>(11) 94198-4860</p>    
-                </div>
-                
-                <div id="insta">
-                    <img src="img/instagram.png" alt="" id="instagram">
-                    <p>@ong_pokelar</p>
-                </div>
-            </div>
-
-        </header>
-
-        <div id=linha>
-        <img id="bola" src="img/botao_pokebola.png" alt=""  />
+        <!-- Contato Integrado e Discreto -->
+        <div id="contato-rapido">
+            <a href="https://wa.me/5511941984860" target="_blank" title="WhatsApp">(11) 94198-4860</a>
         </div>
+    </div>
 
-        <main>
+    <div id="linha">
+    <img id="bola" src="img/botao_pokebola.png" alt="Pokébola Central">
+</div>
+</header>
 
-            <section id="fotoBulba">
-                <div id="textoBulba">
-                    <h2>Faça a diferença e dê um lar a Pokémon resgatados.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit. Mollitia culpa modi pariatur </p>
-                </div>
+<main>
+    <!-- Banner 100% Sangrado na Tela -->
+    <section id="fotoBulba">
+        <div id="textoBulba">
+            <span class="badge-tag">🐾 Centro de Resgate PokéLar</span>
+            <h2>Faça a diferença e dê um lar a quem precisa.</h2>
+            <p>Dezenas de Pokémon resgatados nas rotas de Kanto aguardam por uma segunda chance. Encontre seu novo companheiro de jornada hoje mesmo.</p>
+            
+            <div class="hero-botoes">
+                <a href="#" class="btn-hero-primario">Quero Adotar</a>
+                <a href="#como-ajudar" class="btn-hero-secundario">Como Ajudar</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- CONTADOR DE IMPACTO -->
+        <section id="impacto">
+            <h2>Nosso Impacto em Kanto</h2>
+            <div class="impacto-grid">
+                <article class="card-impacto">
+                    <h3>+250</h3>
+                    <p>Pokémon Resgatados</p>
+                </article>
+                <article class="card-impacto">
+                    <h3>180</h3>
+                    <p>Adoções Concluídas</p>
+                </article>
+                <article class="card-impacto">
+                    <h3>100%</h3>
+                    <p>Atendimento Veterinário</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- COMO AJUDAR -->
+        <section id="como-ajudar">
+            <h2>Como Você Pode Ajudar</h2>
+            <div class="ajuda-grid">
+                <article class="card-ajuda">
+                    <h3>PIX Solidário</h3>
+                    <p>Contribua com qualquer valor para financiar Berries e Potions para os resgatados em reabilitação.</p>
+                    <a href="#" class="botao">Fazer Doação</a>
+                </article>
+
+                <article class="card-ajuda">
+                    <h3>Doação de Suprimentos</h3>
+                    <p>Aceitamos Pokébolas, mantas, brinquedos e itens de restauração em nosso centro de acolhimento.</p>
+                    <a href="#" class="botao">Pontos de Coleta</a>
+                </article>
+
+                <article class="card-ajuda">
+                    <h3>Seja Voluntário</h3>
+                    <p>Doe seu tempo para ajudar na socialização, passeios e cuidados diários com os Pokémon.</p>
+                    <a href="#" class="botao">Quero Ser Voluntário</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE HISTÓRIAS / ADOTANTES -->
+<section id="adotantes" class="container py-5">
+    <div class="titulo-secao text-center mb-5">
+        <h2>Histórias de Amor e Adoção</h2>
+        <p>Veja quem já encontrou seu parceiro para a vida toda em nosso centro!</p>
+    </div>
+
+    <div class="grid-adotantes">
+        <!-- CARD MISTY & TOGEPI -->
+<article class="card-adotante">
+    <div class="card-foto">
+        <img src="img/mistytogepi.jpg" alt="Misty segurando o Togepi">
+        <span class="badge-tipo">Adoção desde Ovo</span>
+    </div>
+    <div class="card-conteudo">
+        <h3>Misty & Togepi</h3>
+        <p class="depoimento">
+            "Quando o Togepi chocou, ele olhou pra mim e soube que éramos uma família. Adoção é criar esse vínculo único de carinho e proteção todos os dias!"
+        </p>
+        <span class="autor-depoimento">— Misty, Líder de Ginásio & Tutora</span>
+    </div>
+</article>
+
+<!-- CARD BROCK & GEODUDE -->
+<article class="card-adotante">
+    <div class="card-foto">
+        <img src="img/brockgeodude.png" alt="Brock segurando o Geodude">
+        <span class="badge-tipo">Cuidados Especiais</span>
+    </div>
+    <div class="card-conteudo">
+        <h3>Brock & Geodude</h3>
+        <p class="depoimento">
+            "Muitos acham que Pokémon de Pedra não exigem atenção, mas o Geodude ama um bom polimento e comida de qualidade. Todo Pokémon merece um lar responsável!"
+        </p>
+        <span class="autor-depoimento">— Brock, Criador Pokémon & Tutor</span>
+    </div>
+</article>
+    </div>
+</section>
+    </main>
+
+    <!-- RODAPÉ COMPLETO -->
+    <footer id="rodape">
+        <div class="rodape-conteudo">
+            <section class="newsletter">
+                <h3>Receba Notícias de Feiras</h3>
+                <form action="#" method="post">
+                    <label for="email-newsletter">Seu e-mail de treinador:</label>
+                    <div class="campo-newsletter">
+                        <input type="email" id="email-newsletter" name="email-newsletter" placeholder="exemplo@pokemail.com" required>
+                        <button type="submit" class="botao">Cadastrar</button>
+                    </div>
+                </form>
             </section>
 
-        </main>
+            <div class="rodape-contato">
+    <h3>Canais de Contato</h3>
+    <p>
+        <img src="img/whatsapp.png" alt="WhatsApp" class="icone-contato" />
+        <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank">(11) 94198-4860</a>
+    </p>
+    <p>
+        <img src="img/telefone.png" alt="Telefone Fixo" class="icone-contato" />
+        <strong>Telefone Fixo:</strong> (11) 3456-7890
+    </p>
+    <p>
+        <img src="img/instagram.png" alt="Instagram" class="icone-contato" />
+        <strong>Instagram:</strong> <a href="https://instagram.com/pokelar_oficial" target="_blank" rel="noopener noreferrer">@pokelar_oficial</a>
+    </p>
+</div>
 
-        
-    </body>
+            <div class="rodape-info">
+                <h3>Centro de Resgate PokéLar</h3>
+                <p>Rota 1, nº 151 - Kanto</p>
+                <p>Visitações: Terça a Domingo, das 09h às 17h</p>
+            </div>
+        </div>
 
+        <div class="rodape-direitos">
+            <p>&copy; 2026 PokéLar. Todos os direitos reservados.</p>
+            <p class="disclaimer">Projeto acadêmico desenvolvido para a disciplina de SCOM. Pokémon e suas marcas pertencem à Nintendo / Creatures Inc. / GAME FREAK inc.</p>
+        </div>
+    </footer>
+</body>
 </html>
