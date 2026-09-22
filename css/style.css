@@ -787,3 +787,153 @@ main section h2::after {
         flex-direction: column;
     }
 }
+
+/* ==========================================================================
+   10. ESTILOS DA PÁGINA DE LOGIN
+   ========================================================================== */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 3rem 0;
+}
+
+.card-form-login {
+    background-color: var(--fundo-card);
+    width: 100%;
+    max-width: 480px;
+    padding: 2.5rem;
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra-hover);
+    border: 1px solid var(--borda-suave);
+    border-top: 6px solid var(--verde-friendball);
+}
+
+.form-cabecalho {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-cabecalho h3 {
+    font-size: 1.8rem;
+    color: var(--texto-escuro);
+    margin: 0 0 0.5rem 0;
+}
+
+.form-cabecalho p {
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo-grupo label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--texto-escuro);
+}
+
+.rotulo-com-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-esqueceu-senha {
+    font-size: 0.825rem;
+    color: var(--verde-texto);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-esqueceu-senha:hover {
+    text-decoration: underline;
+}
+
+.campo-grupo input[type="email"],
+.campo-grupo input[type="password"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transicao);
+    background-color: #f8fafc;
+}
+
+.campo-grupo input:focus {
+    outline: none;
+    border-color: var(--verde-friendball);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 168, 81, 0.2);
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.campo-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--verde-friendball);
+    cursor: pointer;
+}
+
+.campo-checkbox label {
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+    cursor: pointer;
+}
+
+.btn-login-submeter {
+    margin-top: 0.8rem;
+    padding: 0.9rem;
+    background-color: var(--verde-friendball);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transicao);
+    box-shadow: 0 4px 10px rgba(52, 168, 81, 0.3);
+}
+
+.btn-login-submeter:hover {
+    background-color: var(--verde-hover);
+    transform: translateY(-2px);
+}
+
+.form-rodape-opcao {
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--borda-suave);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+.link-destaque {
+    color: var(--verde-texto);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-destaque:hover {
+    text-decoration: underline;
+}
