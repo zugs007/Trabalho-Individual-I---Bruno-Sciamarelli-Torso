@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título da Página - PokéLar</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
                 <h1>PokéLar</h1>
             </a>
 
-            <!-- Navegação Principal (Altere a classe 'ativo' conforme a página) -->
+            <!-- Navegação Principal -->
             <nav id="nav" aria-label="Navegação Principal">
                 <a href="index.html" class="nav-link">Início</a>
                 <a href="pokemon.html" class="nav-link">Pokémon Disponíveis</a>
@@ -27,13 +27,13 @@
 
             <!-- Contato Rápido -->
             <div id="contato-rapido">
-                <a href="https://wa.me/5511941984860" target="_blank" title="WhatsApp">(11) 94198-4860</a>
+                <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer" title="WhatsApp">(11) 94198-4860</a>
             </div>
         </div>
 
         <!-- Linha Divisória com Pokébola Interativa -->
         <div id="linha">
-            <button id="bola" onclick="alert('Bem-vindo ao PokéLar!')" title="Clique para uma surpresa">
+            <button id="bola" onclick="alert('Bem-vindo ao PokéLar!')" title="Clique para uma surpresa" type="button">
                 <img src="img/botao_pokebola.png" alt="Pokébola Interativa">
             </button>
         </div>
@@ -50,8 +50,8 @@
             </div>
         </section>
 
-        <!-- Container para Conteúdo Geral (Cards, Formulários, Tabelas, etc.) -->
-        <section class="pagina-conteudo">
+        <!-- Container para Conteúdo Geral (Trocado para div para evitar alerta semântico do W3C) -->
+        <div class="pagina-conteudo">
             <div class="container">
                 
                 <!-- ==================================================== -->
@@ -61,7 +61,7 @@
                 <p>Insira aqui os cards de Pokémon, textos institucionais ou formulários de adoção/login.</p>
 
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- RODAPÉ COMPLETO -->
@@ -81,15 +81,15 @@
             <div class="rodape-contato">
                 <h3>Canais de Contato</h3>
                 <p>
-                    <img src="img/whatsapp.png" alt="WhatsApp" class="icone-contato" />
-                    <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank">(11) 94198-4860</a>
+                    <img src="img/whatsapp.png" alt="WhatsApp" class="icone-contato">
+                    <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer">(11) 94198-4860</a>
                 </p>
                 <p>
-                    <img src="img/telefone.png" alt="Telefone Fixo" class="icone-contato" />
+                    <img src="img/telefone.png" alt="Telefone Fixo" class="icone-contato">
                     <strong>Telefone Fixo:</strong> (11) 3456-7890
                 </p>
                 <p>
-                    <img src="img/instagram.png" alt="Instagram" class="icone-contato" />
+                    <img src="img/instagram.png" alt="Instagram" class="icone-contato">
                     <strong>Instagram:</strong> <a href="https://instagram.com/pokelar_oficial" target="_blank" rel="noopener noreferrer">@pokelar_oficial</a>
                 </p>
             </div>

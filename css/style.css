@@ -172,6 +172,7 @@ img {
 
 #contato-rapido {
     justify-self: end;
+    flex-shrink: 0;
 }
 
 #contato-rapido a {
@@ -184,6 +185,7 @@ img {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: var(--transicao);
+    white-space: nowrap;
 }
 
 #contato-rapido a:hover {
@@ -936,4 +938,284 @@ main section h2::after {
 
 .link-destaque:hover {
     text-decoration: underline;
+}
+
+/* ==========================================================================
+   11. ESTILOS DA PÁGINA COMO ADOTAR
+   ========================================================================== */
+.lista-passos {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.passo-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.2rem;
+    background-color: var(--fundo-pagina);
+    border-radius: var(--raio-borda);
+    border-left: 5px solid var(--verde-friendball);
+    transition: var(--transicao);
+}
+
+.passo-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--sombra-card);
+}
+
+.passo-numero {
+    background-color: var(--verde-friendball);
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.passo-conteudo h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.25rem;
+    color: var(--texto-escuro);
+}
+
+.passo-conteudo p {
+    margin: 0;
+    font-size: 0.98rem;
+    color: var(--texto-suave);
+    line-height: 1.6;
+}
+
+.lista-requisitos {
+    padding-left: 1.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+.lista-requisitos li {
+    font-size: 0.95rem;
+    color: var(--texto-suave);
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .passo-item {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+/* ==========================================================================
+   12. ESTILOS DA PÁGINA POKÉMON DISPONÍVEIS
+   ========================================================================== */
+.painel-filtros {
+    background-color: var(--fundo-card);
+    padding: 1.5rem;
+    border-radius: var(--raio-borda);
+    border: 1px solid var(--borda-suave);
+    box-shadow: var(--sombra-card);
+}
+
+.form-filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    align-items: flex-end;
+}
+
+.campo-filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    min-width: 180px;
+}
+
+.campo-filtro label {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--texto-escuro);
+}
+
+.campo-filtro input,
+.campo-filtro select {
+    padding: 0.65rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    font-size: 0.95rem;
+    background-color: #f8fafc;
+    color: var(--texto-escuro);
+}
+
+.campo-filtro input:focus,
+.campo-filtro select:focus {
+    outline: none;
+    border-color: var(--verde-friendball);
+    background-color: #ffffff;
+}
+
+.btn-filtrar {
+    padding: 0.65rem 1.5rem;
+    background-color: var(--verde-friendball);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+.btn-filtrar:hover {
+    background-color: var(--verde-hover);
+}
+
+/* Grade de Cards */
+.grid-pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.card-pokemon {
+    background-color: var(--fundo-card);
+    border-radius: var(--raio-borda);
+    border: 1px solid var(--borda-suave);
+    overflow: hidden;
+    box-shadow: var(--sombra-card);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transicao);
+}
+
+.card-pokemon:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-hover);
+}
+
+.card-pokemon-imagem {
+    position: relative;
+    width: 100%;
+    height: 220px; /* Altura fixa para todos os topos de card */
+    overflow: hidden;
+    padding: 0; /* Remove a margem/borda interna */
+    background-color: #f1f5f9;
+}
+
+.card-pokemon-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche a área recortando levemente se necessário, sem distorcer */
+    display: block;
+}
+
+.badge-status {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.badge-status.disponivel {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.badge-status.em-processo {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.card-pokemon-corpo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tags-tipo {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.tag-tipo {
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.tipo-planta { background-color: #78c850; }
+.tipo-veneno { background-color: #a040a0; }
+.tipo-fogo { background-color: #f08030; }
+.tipo-agua { background-color: #6890f0; }
+.tipo-eletrico { background-color: #f8d030; color: #333333; }
+.tipo-normal { background-color: #a8a878; }
+
+.card-pokemon-corpo h3 {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.4rem;
+    color: var(--texto-escuro);
+}
+
+.info-caracteristicas {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-size: 0.88rem;
+    color: var(--texto-suave);
+}
+
+.info-caracteristicas li {
+    margin-bottom: 0.3rem;
+}
+
+.descricao-resumida {
+    font-size: 0.92rem;
+    color: var(--texto-suave);
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    flex-grow: 1;
+}
+
+.card-pokemon-acoes {
+    margin-top: auto;
+}
+
+.btn-card-adotar {
+    display: block;
+    text-align: center;
+    background-color: var(--verde-friendball);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: var(--transicao);
+}
+
+.btn-card-adotar:hover {
+    background-color: var(--verde-hover);
+}
+
+.btn-card-adotar.desabilitado {
+    background-color: #cbd5e0;
+    color: #64748b;
+    cursor: not-allowed;
 }

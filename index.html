@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéLar - Centro de Resgate e Adoção Pokémon</title>
+
+    <!-- Preload da imagem do Hero para resolver 'LCP request discovery' -->
+    <link rel="preload" as="image" href="img/bg-hero.jpg">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +19,7 @@
             </a>
 
             <nav id="nav" aria-label="Navegação Principal">
-                <a href="index.html" class="nav-link ativo">Início</a>
+                <a href="index.html" class="nav-link ativo" aria-current="page">Início</a>
                 <a href="pokemon.html" class="nav-link">Pokémon Disponíveis</a>
                 <a href="como-adotar.html" class="nav-link">Como Adotar</a>
                 <a href="sobre.html" class="nav-link">Sobre Nós</a>
@@ -153,15 +157,15 @@
             <div class="rodape-contato">
                 <h3>Canais de Contato</h3>
                 <p>
-                    <img src="img/whatsapp.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <img src="img/whatsapp.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true" loading="lazy">
                     <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer">(11) 94198-4860</a>
                 </p>
                 <p>
-                    <img src="img/telefone.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <img src="img/telefone.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true" loading="lazy">
                     <strong>Telefone Fixo:</strong> (11) 3456-7890
                 </p>
                 <p>
-                    <img src="img/instagram.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <img src="img/instagram.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true" loading="lazy">
                     <strong>Instagram:</strong> <a href="https://instagram.com/pokelar_oficial" target="_blank" rel="noopener noreferrer">@pokelar_oficial</a>
                 </p>
             </div>
