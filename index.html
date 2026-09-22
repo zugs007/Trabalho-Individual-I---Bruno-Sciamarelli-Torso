@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>PokéLar</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéLar - Centro de Resgate e Adoção Pokémon</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header id="cabeca">
-    <div id="cabeca-container">
-        <!-- Logo com Ícone para dar contexto -->
-        <h1>PokéLar</h1>
+        <div id="cabeca-container">
+            <a href="index.html" id="brand">
+                <h1>PokéLar</h1>
+            </a>
 
-        <!-- Navegação Principal -->
-        <nav id="nav" aria-label="Navegação Principal">
-            <a href="#" class="nav-link ativo">Início</a>
-            <a href="#" class="nav-link">Pokémon Disponíveis</a>
-            <a href="#" class="nav-link">Como Adotar</a>
-            <a href="sobre.html" class="nav-link">Sobre Nós</a>
-            <a href="#" class="nav-link nav-destaque">Login</a>
-        </nav>
+            <nav id="nav" aria-label="Navegação Principal">
+                <a href="index.html" class="nav-link ativo">Início</a>
+                <a href="pokemon.html" class="nav-link">Pokémon Disponíveis</a>
+                <a href="como-adotar.html" class="nav-link">Como Adotar</a>
+                <a href="sobre.html" class="nav-link">Sobre Nós</a>
+                <a href="login.html" class="nav-link nav-destaque">Login</a>
+            </nav>
 
-        <!-- Contato Integrado e Discreto -->
-        <div id="contato-rapido">
-            <a href="https://wa.me/5511941984860" target="_blank" title="WhatsApp">(11) 94198-4860</a>
-        </div>
-    </div>
-
-    <div id="linha">
-    <div id="linha">
-    <button id="bola" onclick="alert('Bem-vindo ao PokéLar!')" title="Clique para uma surpresa">
-        <img src="img/botao_pokebola.png" alt="Pokébola Interativa">
-    </button>
-</div>
-</div>
-</header>
-
-<main>
-    <!-- Banner 100% Sangrado na Tela -->
-    <section id="fotoBulba">
-        <div id="textoBulba">
-            <span class="badge-tag">🐾 Centro de Resgate PokéLar</span>
-            <h2>Faça a diferença e dê um lar a quem precisa.</h2>
-            <p>Dezenas de Pokémon resgatados nas rotas de Kanto aguardam por uma segunda chance. Encontre seu novo companheiro de jornada hoje mesmo.</p>
-            
-            <div class="hero-botoes">
-                <a href="#" class="btn-hero-primario">Quero Adotar</a>
-                <a href="#como-ajudar" class="btn-hero-secundario">Como Ajudar</a>
+            <div id="contato-rapido">
+                <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer" title="Falar no WhatsApp">(11) 94198-4860</a>
             </div>
         </div>
-    </section>
 
-        <!-- CONTADOR DE IMPACTO -->
+        <div id="linha">
+            <button id="bola" onclick="alert('Bem-vindo ao PokéLar!')" title="Clique para uma surpresa" type="button">
+                <img src="img/botao_pokebola.png" alt="Pokébola Interativa" width="58" height="58">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section id="fotoBulba">
+            <div id="textoBulba">
+                <span class="badge-tag">🐾 Centro de Resgate PokéLar</span>
+                <h2>Faça a diferença e dê um lar a quem precisa.</h2>
+                <p>Dezenas de Pokémon resgatados nas rotas de Kanto aguardam por uma segunda chance. Encontre seu novo companheiro de jornada hoje mesmo.</p>
+                
+                <div class="hero-botoes">
+                    <a href="pokemon.html" class="btn-hero-primario">Quero Adotar</a>
+                    <a href="#como-ajudar" class="btn-hero-secundario">Como Ajudar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contador de Impacto -->
         <section id="impacto">
             <h2>Nosso Impacto em Kanto</h2>
             <div class="impacto-grid">
@@ -71,72 +68,75 @@
             </div>
         </section>
 
-        <!-- COMO AJUDAR -->
+        <!-- Como Ajudar -->
         <section id="como-ajudar">
             <h2>Como Você Pode Ajudar</h2>
             <div class="ajuda-grid">
                 <article class="card-ajuda">
-                    <h3>PIX Solidário</h3>
-                    <p>Contribua com qualquer valor para financiar Berries e Potions para os resgatados em reabilitação.</p>
+                    <div>
+                        <h3>PIX Solidário</h3>
+                        <p>Contribua com qualquer valor para financiar Berries e Potions para os resgatados em reabilitação.</p>
+                    </div>
                     <a href="#" class="botao">Fazer Doação</a>
                 </article>
 
                 <article class="card-ajuda">
-                    <h3>Doação de Suprimentos</h3>
-                    <p>Aceitamos Pokébolas, mantas, brinquedos e itens de restauração em nosso centro de acolhimento.</p>
+                    <div>
+                        <h3>Doação de Suprimentos</h3>
+                        <p>Aceitamos Pokébolas, mantas, brinquedos e itens de restauração em nosso centro de acolhimento.</p>
+                    </div>
                     <a href="#" class="botao">Pontos de Coleta</a>
                 </article>
 
                 <article class="card-ajuda">
-                    <h3>Seja Voluntário</h3>
-                    <p>Doe seu tempo para ajudar na socialização, passeios e cuidados diários com os Pokémon.</p>
+                    <div>
+                        <h3>Seja Voluntário</h3>
+                        <p>Doe seu tempo para ajudar na socialização, passeios e cuidados diários com os Pokémon.</p>
+                    </div>
                     <a href="#" class="botao">Quero Ser Voluntário</a>
                 </article>
             </div>
         </section>
 
-        <!-- SEÇÃO DE HISTÓRIAS / ADOTANTES -->
-<section id="adotantes" class="container py-5">
-    <div class="titulo-secao text-center mb-5">
-        <h2>Histórias de Amor e Adoção</h2>
-        <p>Veja quem já encontrou seu parceiro para a vida toda em nosso centro!</p>
-    </div>
+        <!-- Histórias de Adoção -->
+        <section id="adotantes" class="container py-5">
+            <div class="titulo-secao">
+                <h2>Histórias de Amor e Adoção</h2>
+                <p>Veja quem já encontrou seu parceiro para a vida toda em nosso centro!</p>
+            </div>
 
-    <div class="grid-adotantes">
-        <!-- CARD MISTY & TOGEPI -->
-<article class="card-adotante">
-    <div class="card-foto">
-        <img src="img/mistytogepi.jpg" alt="Misty segurando o Togepi">
-        <span class="badge-tipo">Adoção desde Ovo</span>
-    </div>
-    <div class="card-conteudo">
-        <h3>Misty & Togepi</h3>
-        <p class="depoimento">
-            "Quando o Togepi chocou, ele olhou pra mim e soube que éramos uma família. Adoção é criar esse vínculo único de carinho e proteção todos os dias!"
-        </p>
-        <span class="autor-depoimento">— Misty, Líder de Ginásio & Tutora</span>
-    </div>
-</article>
+            <div class="grid-adotantes">
+                <article class="card-adotante">
+                    <div class="card-foto">
+                        <img src="img/mistytogepi.jpg" alt="Misty segurando o Togepi" width="400" height="350" loading="lazy">
+                        <span class="badge-tipo">Adoção desde Ovo</span>
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Misty & Togepi</h3>
+                        <p class="depoimento">
+                            "Quando o Togepi chocou, ele olhou pra mim e soube que éramos uma família. Adoção é criar esse vínculo único de carinho e proteção todos os dias!"
+                        </p>
+                        <span class="autor-depoimento">— Misty, Líder de Ginásio & Tutora</span>
+                    </div>
+                </article>
 
-<!-- CARD BROCK & GEODUDE -->
-<article class="card-adotante">
-    <div class="card-foto">
-        <img src="img/brockgeodude.png" alt="Brock segurando o Geodude">
-        <span class="badge-tipo">Cuidados Especiais</span>
-    </div>
-    <div class="card-conteudo">
-        <h3>Brock & Geodude</h3>
-        <p class="depoimento">
-            "Muitos acham que Pokémon de Pedra não exigem atenção, mas o Geodude ama um bom polimento e comida de qualidade. Todo Pokémon merece um lar responsável!"
-        </p>
-        <span class="autor-depoimento">— Brock, Criador Pokémon & Tutor</span>
-    </div>
-</article>
-    </div>
-</section>
+                <article class="card-adotante">
+                    <div class="card-foto">
+                        <img src="img/brockgeodude.png" alt="Brock segurando o Geodude" width="400" height="350" loading="lazy">
+                        <span class="badge-tipo">Cuidados Especiais</span>
+                    </div>
+                    <div class="card-conteudo">
+                        <h3>Brock & Geodude</h3>
+                        <p class="depoimento">
+                            "Muitos acham que Pokémon de Pedra não exigem atenção, mas o Geodude ama um bom polimento e comida de qualidade. Todo Pokémon merece um lar responsável!"
+                        </p>
+                        <span class="autor-depoimento">— Brock, Criador Pokémon & Tutor</span>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <!-- RODAPÉ COMPLETO -->
     <footer id="rodape">
         <div class="rodape-conteudo">
             <section class="newsletter">
@@ -145,26 +145,26 @@
                     <label for="email-newsletter">Seu e-mail de treinador:</label>
                     <div class="campo-newsletter">
                         <input type="email" id="email-newsletter" name="email-newsletter" placeholder="exemplo@pokemail.com" required>
-                        <button type="submit" class="botao">Cadastrar</button>
+                        <button type="submit">Cadastrar</button>
                     </div>
                 </form>
             </section>
 
             <div class="rodape-contato">
-    <h3>Canais de Contato</h3>
-    <p>
-        <img src="img/whatsapp.png" alt="WhatsApp" class="icone-contato" />
-        <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank">(11) 94198-4860</a>
-    </p>
-    <p>
-        <img src="img/telefone.png" alt="Telefone Fixo" class="icone-contato" />
-        <strong>Telefone Fixo:</strong> (11) 3456-7890
-    </p>
-    <p>
-        <img src="img/instagram.png" alt="Instagram" class="icone-contato" />
-        <strong>Instagram:</strong> <a href="https://instagram.com/pokelar_oficial" target="_blank" rel="noopener noreferrer">@pokelar_oficial</a>
-    </p>
-</div>
+                <h3>Canais de Contato</h3>
+                <p>
+                    <img src="img/whatsapp.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer">(11) 94198-4860</a>
+                </p>
+                <p>
+                    <img src="img/telefone.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <strong>Telefone Fixo:</strong> (11) 3456-7890
+                </p>
+                <p>
+                    <img src="img/instagram.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <strong>Instagram:</strong> <a href="https://instagram.com/pokelar_oficial" target="_blank" rel="noopener noreferrer">@pokelar_oficial</a>
+                </p>
+            </div>
 
             <div class="rodape-info">
                 <h3>Centro de Resgate PokéLar</h3>

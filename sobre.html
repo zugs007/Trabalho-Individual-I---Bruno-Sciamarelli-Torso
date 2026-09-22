@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - PokéLar</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO FIXO DO SITE -->
     <header id="cabeca">
         <div id="cabeca-container">
-            <!-- Logo do PokéLar -->
             <a href="index.html" id="brand">
                 <h1>PokéLar</h1>
             </a>
 
-            <!-- Navegação Principal -->
             <nav id="nav" aria-label="Navegação Principal">
                 <a href="index.html" class="nav-link">Início</a>
                 <a href="pokemon.html" class="nav-link">Pokémon Disponíveis</a>
@@ -25,23 +22,19 @@
                 <a href="login.html" class="nav-link nav-destaque">Login</a>
             </nav>
 
-            <!-- Contato Rápido -->
             <div id="contato-rapido">
-                <a href="https://wa.me/5511941984860" target="_blank" title="WhatsApp">(11) 94198-4860</a>
+                <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer" title="Falar no WhatsApp">(11) 94198-4860</a>
             </div>
         </div>
 
-        <!-- Linha Divisória com Pokébola Interativa -->
         <div id="linha">
-            <button id="bola" onclick="alert('Bem-vindo ao PokéLar! Conheça nossa história.')" title="Clique para uma surpresa">
-                <img src="img/botao_pokebola.png" alt="Pokébola Interativa">
+            <button id="bola" onclick="alert('Bem-vindo ao PokéLar! Conheça nossa história.')" title="Clique para uma surpresa" type="button">
+                <img src="img/botao_pokebola.png" alt="Pokébola Interativa" width="58" height="58">
             </button>
         </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
     <main>
-        <!-- Banner Interno de Cabeçalho -->
         <section class="pagina-cabecalho">
             <div class="container">
                 <span class="badge-tag">🏠 Conheça o PokéLar</span>
@@ -50,79 +43,74 @@
             </div>
         </section>
 
-        <!-- Conteúdo Principal da História -->
         <section class="pagina-conteudo">
             <div class="container">
 
-                <!-- Bloco: A Origem em Lavender Town -->
-                <article style="background: var(--fundo-card); padding: 2.5rem; border-radius: var(--raio-borda); border: 1px solid var(--borda-suave); margin-bottom: 3rem; box-shadow: var(--sombra-card);">
-                    <span class="badge-tag" style="background-color: rgba(147, 51, 234, 0.15); color: #7e22ce; border-color: rgba(147, 51, 234, 0.3);">💜 As Raízes em Kanto</span>
-                    <h3 style="font-size: 1.8rem; color: var(--texto-escuro); margin-top: 0.5rem; margin-bottom: 1.2rem;">Da Casa dos Pokémon para o Mundo</h3>
+                <article class="card-sobre">
+                    <span class="badge-tag badge-purple">💜 As Raízes em Kanto</span>
+                    <h3>Da Casa dos Pokémon para o Mundo</h3>
                     
-                    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--texto-suave);">
+                    <p>
                         A história do <strong>PokéLar</strong> começou há muitos anos nas ruas silenciosas de <strong>Lavender Town</strong>. Nosso fundador cresceu sob os cuidados e ensinamentos do bondoso <strong>Sr. Fuji</strong> na <em>Casa de Voluntários Pokémon de Lavender</em>, um abrigo dedicado a cuidar de criaturinhas que haviam perdido seus lares ou passado por momentos difíceis.
                     </p>
                     
-                    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--texto-suave);">
+                    <p>
                         Foi observando a paciência com que o Sr. Fuji reabilitava desde traumatizados Cubones até jovens Bulbasauros abandonados por treinadores inexperientes que nasceu a missão de uma vida: criar um centro especializado não apenas no resgate, mas na <strong>adoção consciente e amorosa de Pokémon em toda a região</strong>.
                     </p>
                 </article>
 
-                <!-- Bloco: Apoio de Lendas e Crescimento -->
-                <article style="background: var(--fundo-card); padding: 2.5rem; border-radius: var(--raio-borda); border: 1px solid var(--borda-suave); margin-bottom: 3.5rem; box-shadow: var(--sombra-card);">
+                <article class="card-sobre">
                     <span class="badge-tag">🤝 Redes de Apoio</span>
-                    <h3 style="font-size: 1.8rem; color: var(--texto-escuro); margin-top: 0.5rem; margin-bottom: 1.2rem;">Apoiado por Figuras Notáveis</h3>
+                    <h3>Apoiado por Figuras Notáveis</h3>
                     
-                    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--texto-suave);">
+                    <p>
                         O sonho da ONG tomou proporções maiores quando o projeto recebeu o apadrinhamento direto do próprio <strong>Sr. Fuji</strong> e o suporte técnico de pesquisadores do Laboratório do <strong>Professor Carvalho</strong> em Pallet Town.
                     </p>
                     
-                    <p style="font-size: 1.05rem; line-height: 1.8; color: var(--texto-suave);">
+                    <p>
                         Com essa forte rede de apoio, o PokéLar evoluiu de um pequeno refúgio temporário para um centro de reabilitação e adoção estruturado, com equipe veterinária, especialistas em comportamento e espaços abertos adaptados para os mais diversos tipos de Pokémon — dos aquáticos aos elétricos.
                     </p>
                 </article>
 
-                <!-- Seção: Missão, Visão e Valores -->
                 <div class="titulo-secao">
-                    <h2 style="font-size: 2rem; color: var(--verde-friendball); text-align: center; margin-bottom: 0.5rem;">Nossos Pilares</h2>
-                    <p style="text-align: center; color: var(--texto-suave); margin-bottom: 2.5rem;">O que guia nossas ações e cuidados todos os dias.</p>
+                    <h2>Nossos Pilares</h2>
+                    <p>O que guia nossas ações e cuidados todos os dias.</p>
                 </div>
 
-                <div class="impacto-grid" style="margin-bottom: 4rem;">
+                <div class="impacto-grid mb-4">
                     <div class="card-ajuda">
                         <div>
-                            <span style="font-size: 2rem;">❤️</span>
-                            <h3 style="margin-top: 0.5rem;">Missão</h3>
-                            <p style="color: var(--texto-suave); font-size: 0.95rem;">Resgatar, reabilitar e promover a adoção responsável de Pokémon abandonedos ou resgatados, garantindo a eles uma vida segura e cheia de afeto.</p>
+                            <span class="icone-pilar">❤️</span>
+                            <h3>Missão</h3>
+                            <p>Resgatar, reabilitar e promover a adoção responsável de Pokémon abandonados ou resgatados, garantindo a eles uma vida segura e cheia de afeto.</p>
                         </div>
                     </div>
 
                     <div class="card-ajuda">
                         <div>
-                            <span style="font-size: 2rem;">🌟</span>
-                            <h3 style="margin-top: 0.5rem;">Visão</h3>
-                            <p style="color: var(--texto-suave); font-size: 0.95rem;">Um mundo onde nenhum Pokémon sofra por abandono ou maus-tratos, e onde a amizade entre humanos e Pokémon seja baseada no respeito mútuo.</p>
+                            <span class="icone-pilar">🌟</span>
+                            <h3>Visão</h3>
+                            <p>Um mundo onde nenhum Pokémon sofra por abandono ou maus-tratos, e onde a amizade entre humanos e Pokémon seja baseada no respeito mútuo.</p>
                         </div>
                     </div>
 
                     <div class="card-ajuda">
                         <div>
-                            <span style="font-size: 2rem;">🤝</span>
-                            <h3 style="margin-top: 0.5rem;">Valores</h3>
-                            <p style="color: var(--texto-suave); font-size: 0.95rem;">Empatia, transparência no processo seletivo de adotantes, dedicação ao bem-estar e amor incondicional a todas as espécies.</p>
+                            <span class="icone-pilar">🤝</span>
+                            <h3>Valores</h3>
+                            <p>Empatia, transparência no processo seletivo de adotantes, dedicação ao bem-estar e amor incondicional a todas as espécies.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Chamada para Ação (CTA) -->
-                <div style="background: linear-gradient(135deg, var(--verde-friendball) 0%, #1e293b 100%); color: white; padding: 3rem 2rem; border-radius: var(--raio-borda); text-align: center; box-shadow: var(--sombra-hover);">
-                    <h3 style="font-size: 2rem; color: white; margin-top: 0; margin-bottom: 1rem;">Quer fazer parte dessa história?</h3>
-                    <p style="font-size: 1.1rem; max-width: 650px; margin: 0 auto 2rem auto; color: #e2e8f0;">
+                <div class="cta-box">
+                    <h3>Quer fazer parte dessa história?</h3>
+                    <p>
                         Seja adotando um novo parceiro de jornada, sendo um voluntário em nossa sede ou fazendo uma doação para suprir rações e itens medicinais.
                     </p>
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="pokemon.html" class="botao" style="background-color: #FFCB05; color: #1e293b; padding: 12px 28px; font-weight: bold; text-decoration: none; border-radius: 8px;">Conhecer Pokémon</a>
-                        <a href="https://wa.me/5511941984860" target="_blank" class="botao" style="background-color: transparent; border: 2px solid white; color: white; padding: 12px 28px; font-weight: bold; text-decoration: none; border-radius: 8px;">Falar Conosco</a>
+                    <div class="cta-botoes">
+                        <a href="pokemon.html" class="btn-cta-primario">Conhecer Pokémon</a>
+                        <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer" class="btn-cta-secundario">Falar Conosco</a>
                     </div>
                 </div>
 
@@ -130,7 +118,6 @@
         </section>
     </main>
 
-    <!-- RODAPÉ COMPLETO -->
     <footer id="rodape">
         <div class="rodape-conteudo">
             <section class="newsletter">
@@ -139,7 +126,7 @@
                     <label for="email-newsletter">Seu e-mail de treinador:</label>
                     <div class="campo-newsletter">
                         <input type="email" id="email-newsletter" name="email-newsletter" placeholder="exemplo@pokemail.com" required>
-                        <button type="submit" class="botao">Cadastrar</button>
+                        <button type="submit">Cadastrar</button>
                     </div>
                 </form>
             </section>
@@ -147,15 +134,15 @@
             <div class="rodape-contato">
                 <h3>Canais de Contato</h3>
                 <p>
-                    <img src="img/whatsapp.png" alt="WhatsApp" class="icone-contato" />
-                    <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank">(11) 94198-4860</a>
+                    <img src="img/whatsapp.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
+                    <strong>WhatsApp:</strong> <a href="https://wa.me/5511941984860" target="_blank" rel="noopener noreferrer">(11) 94198-4860</a>
                 </p>
                 <p>
-                    <img src="img/telefone.png" alt="Telefone Fixo" class="icone-contato" />
+                    <img src="img/telefone.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
                     <strong>Telefone Fixo:</strong> (11) 3456-7890
                 </p>
                 <p>
-                    <img src="img/instagram.png" alt="Instagram" class="icone-contato" />
+                    <img src="img/instagram.png" alt="" class="icone-contato" width="20" height="20" aria-hidden="true">
                     <strong>Instagram:</strong> <a href="https://instagram.com/pokelar_oficial" target="_blank" rel="noopener noreferrer">@pokelar_oficial</a>
                 </p>
             </div>
@@ -172,6 +159,5 @@
             <p class="disclaimer">Projeto acadêmico desenvolvido para a disciplina de SCOM. Pokémon e suas marcas pertencem à Nintendo / Creatures Inc. / GAME FREAK inc.</p>
         </div>
     </footer>
-
 </body>
 </html>
